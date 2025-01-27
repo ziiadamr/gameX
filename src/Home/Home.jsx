@@ -60,7 +60,7 @@ function Home() {
 
             <div className="absolute inset-0">
                 <img 
-                    src="/homei.JPG" 
+                    src={`${process.env.PUBLIC_URL}/homei.jpg`}
                     alt="Hero Background" 
                     className="w-full h-full object-cover object-bottom opacity-70"
                 />
@@ -149,7 +149,8 @@ function Home() {
             <div className='overflow-hidden max-w-fit max-h-fit'>
               <Link to="/game/:475">
             <img 
-                    src="/genshin.JPG" 
+                    src={`${process.env.PUBLIC_URL}/genshin.JPG`}
+
                     alt="game" 
                     className=" hover:scale-105 duration-150"
                 />
@@ -171,8 +172,8 @@ function Home() {
             <div className='overflow-hidden max-w-fit max-h-fit'>
             <Link to="/game/:466">
             <img 
-                    src="/valorant.JPG" 
-                    alt="game" 
+                    src={`${process.env.PUBLIC_URL}/valorant.JPG`}
+                      alt="game" 
                     className=" hover:scale-105 duration-150"
                 />
               </Link>

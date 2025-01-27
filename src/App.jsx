@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
+import { createHashRouter, Link, RouterProvider } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './Home/Home';
 import GameDetails from './GameDetails/GameDetails';
@@ -17,7 +17,7 @@ import About from './About/About';
 import NotFound from './NotFound/NotFound';
 
 
-const myRouter = createBrowserRouter([
+const myRouter = createHashRouter([
   {
     path:'',
     element:<Layout/>,
