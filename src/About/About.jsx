@@ -38,7 +38,7 @@ function About() {
 
 <div className="absolute inset-0">
     <img 
-        src="/about-bg.jpg" 
+        src="/about.JPG" 
         alt="Hero Background" 
         className="w-full h-full object-cover object-bottom opacity-70"
     />
