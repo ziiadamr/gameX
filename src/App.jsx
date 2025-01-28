@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { createHashRouter, Link, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, Link, RouterProvider } from 'react-router-dom';
+import { HashRouter} from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './Home/Home';
 import GameDetails from './GameDetails/GameDetails';
@@ -19,23 +20,23 @@ import NotFound from './NotFound/NotFound';
 
 const myRouter = createHashRouter([
   {
-    path:'',
-    element:<Layout/>,
-    children:[
-      {path:'/',element:<Home/>},
-      {path:`/Shooter`,element:<Shooter/>},
-      {path:`/Strategy`,element:<Strategy/>},
-      {path:`/Sci-Fi`,element:<SciFi/>},
-      {path:`/Sports`,element:<Sports/>},
-      {path:`/Anime`,element:<Anime/>},
-      {path:`/Horror`,element:<Horror/>},
-      {path:`/About`,element:<About/>},
-      {path:`/Games`,element:<Games/>},
-      {path:`/game/:id`,element:<GameDetails/>},
-      {path:'*',element:<NotFound/>} 
+    path: "",
+    element: <Layout/>,
+    children: [
+      {path: "/", element: <Home/>},
+      {path: "/shooter", element: <Shooter/>},
+      {path: "/strategy", element: <Strategy/>},
+      {path: "/sci-fi", element: <SciFi/>},
+      {path: "/sports", element: <Sports/>},
+      {path: "/anime", element: <Anime/>},
+      {path: "/horror", element: <Horror/>},
+      {path: "/about", element: <About/>},
+      {path: "/games", element: <Games/>},
+      {path: "/game/:id", element: <GameDetails/>},
+      {path: "*", element: <NotFound/>}
     ]
   }
-])
+]);
 
 function App() {
   return (

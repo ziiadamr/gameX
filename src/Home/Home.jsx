@@ -59,11 +59,10 @@ function Home() {
         <div className="relative h-screen"> {/* غيرنا min-h-screen لـ h-[800px] */}
 
             <div className="absolute inset-0">
-                <img 
-                    src={`${process.env.PUBLIC_URL}/homei.jpg`}
-                    alt="Hero Background" 
-                    className="w-full h-full object-cover object-bottom opacity-70"
-                />
+            <img 
+                src={`${process.env.PUBLIC_URL}/images/homei.jpg`}
+                alt="Hero Background" 
+                className="w-full h-full object-cover object-bottom opacity-70"/>
             </div>
 
             {/* Content Section */}
@@ -149,8 +148,7 @@ function Home() {
             <div className='overflow-hidden max-w-fit max-h-fit'>
               <Link to="/game/:475">
             <img 
-                    src={`${process.env.PUBLIC_URL}/genshin.JPG`}
-
+                    src={`${process.env.PUBLIC_URL}/images/genshin.jpg`}
                     alt="game" 
                     className=" hover:scale-105 duration-150"
                 />
@@ -172,8 +170,8 @@ function Home() {
             <div className='overflow-hidden max-w-fit max-h-fit'>
             <Link to="/game/:466">
             <img 
-                    src={`${process.env.PUBLIC_URL}/valorant.JPG`}
-                      alt="game" 
+                    src={`${process.env.PUBLIC_URL}/images/valorant.jpg`}
+                    alt="game" 
                     className=" hover:scale-105 duration-150"
                 />
               </Link>

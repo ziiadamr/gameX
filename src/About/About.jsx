@@ -38,8 +38,8 @@ function About() {
 
 <div className="absolute inset-0">
     <img 
-        src={`${process.env.PUBLIC_URL}/about.jpg`}
-        alt="Hero Background" 
+    src={`${process.env.PUBLIC_URL}/images/about.jpg`}
+    alt="Hero Background" 
         className="w-full h-full object-cover object-bottom opacity-70"
     />
 </div>
